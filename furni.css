@@ -10,6 +10,7 @@
     position: fixed;
     margin-left:8px;
     padding-bottom: 20px;
+    max-width: 1400px;
     
 }
 .container {
@@ -85,6 +86,8 @@ transform-origin: left;
  .header {
   background-color: #3b5d50;
   height: 600px;
+  max-width: 1400px;
+  width: 100%;
 }
 
  .couch {
@@ -92,8 +95,12 @@ transform-origin: left;
   justify-content: end;
   margin-top: -240px;
   z-index: 10;
-  position: relative;
+  position: absolute;
+  top: 350px;
+  right: 30px;
   pointer-events: none;
+ 
+  
 
  }
  .couch1 {
@@ -106,14 +113,15 @@ transform-origin: left;
 
  }
 .container2 .naslov {
-  position: relative;
+  position: absolute;
   top: 100px;
   left: 140px;
+  max-width: 1400px;
 
 
 }
 .container2 .naslov1 {
-  position: relative;
+  position: absolute;
   top: 120px;
   left: 140px;
 }
@@ -138,6 +146,7 @@ transform-origin: left;
   border: 0.3px ;
   cursor: pointer;
   z-index: 2;
+  pointer-events:auto;
 }
 
 #shopNow:hover {
@@ -157,6 +166,7 @@ background-color: #fabb1d;
   transition: box-shadow 0.1s;
   margin-left: 3px;
   z-index: 2;
+  pointer-events: auto;
 }
 
 #explore:hover {
@@ -435,9 +445,9 @@ background-color: #fabb1d;
 }
 
 .subImage {
-  position:relative;
-  top: -200px;
-  left: 900px;
+  position:absolute;
+  top: 1140px;
+  left:900px;
 }
 
 footer {
@@ -449,7 +459,7 @@ footer {
   color: #3b5d50;
   font-size: 37px;
   display: flex;
- margin-top: -200px;
+ margin-top: 200px;
  margin-left: 100px;
  
 }
